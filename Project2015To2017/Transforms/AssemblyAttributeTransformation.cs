@@ -15,11 +15,11 @@ namespace Project2015To2017.Transforms
 				return;
 			}
 
-			definition.AssemblyAttributeProperties = definition.AssemblyAttributeProperties
-				.Concat(AssemblyAttributeNodes(definition.AssemblyAttributes, definition.PackageConfiguration, progress))
-				.ToArray();
+			//definition.AssemblyAttributeProperties = definition.AssemblyAttributeProperties
+			//	.Concat(AssemblyAttributeNodes(definition.AssemblyAttributes, definition.PackageConfiguration, progress))
+			//	.ToArray();
 
-			if (definition.AssemblyAttributes.File != null && PointlessAssemblyInfo(definition.AssemblyAttributes))
+			if (definition.AssemblyAttributes.File != null /*&& PointlessAssemblyInfo(definition.AssemblyAttributes)*/)
 			{
 				definition.Deletions = definition
 					.Deletions
